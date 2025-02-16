@@ -7,8 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  /* background: linear-gradient(pink, violet); */
-  background-image: url(https://images.unsplash.com/photo-1581022295087-35e593704911?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+  background: linear-gradient(pink, violet);
 }
 
 button {

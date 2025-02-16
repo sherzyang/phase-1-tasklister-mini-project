@@ -14,7 +14,7 @@ function handleTasks(toDo) {
   let btn = document.createElement('button')
   btn.addEventListener('click', handleDelete)
   p.textContent = `${toDo}  `;
-  btn.textContent = "💕"
+  btn.textContent = "x"
   p.appendChild(btn)
   document.querySelector("#tasks").appendChild(p)
 }
