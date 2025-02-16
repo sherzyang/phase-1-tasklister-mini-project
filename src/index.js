@@ -7,18 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
     handleTasks(getForm.value)
     form.reset()
   })
+  function handleTasks(toDo) {
+    let p = document.createElement('p')
+    let btn = document.createElement('button')
+    btn.addEventListener('click', handleDelete)
+    p.textContent = `${toDo}  `;
+    btn.textContent = "x"
+    p.appendChild(btn)
+    document.querySelector("#tasks").appendChild(p)
+  }
+  
+  function handleDelete(e){
+    e.target.parentNode.remove()
+  }
 });
 
-function handleTasks(toDo) {
-  let p = document.createElement('p')
-  let btn = document.createElement('button')
-  btn.addEventListener('click', handleDelete)
-  p.textContent = `${toDo}  `;
-  btn.textContent = "x"
-  p.appendChild(btn)
-  document.querySelector("#tasks").appendChild(p)
-}
-
-function handleDelete(e){
-  e.target.parentNode.remove()
-}
